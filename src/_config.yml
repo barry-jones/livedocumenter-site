@@ -1,1 +1,4 @@
 permalink: /:categories/:year/:month/:day/:title:output_ext
+url: https://livedocumenter.barryjones.me.uk
+plugins:
+  - jekyll-sitemap
