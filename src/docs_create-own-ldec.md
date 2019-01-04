@@ -15,35 +15,36 @@ Creating your own LDEC files requires knowledge of XSLT, however if you want to 
 At it's most basic a LDEC file is a zipped set of content with an <code>.ldec</code> extension, containing an <code>export.config</code> and <code>xslt</code> file.
 
 The contents of the <code>export.config</code> file should be as follows.
-<pre>
-&lt;?xml version="1.0" encoding="UTF-8" ?>
-&lt;export xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    &lt;name>Web Export: MSDN Lo Band Style&lt;/name>
-    &lt;description>A wesbite export of the documentation in the MSDN Lo Band web style.&lt;/description>
-    &lt;author>The Box Software&lt;/author>
-    &lt;version>1.0&lt;/version>
-    &lt;exporter>web&lt;/exporter>
-    &lt;xslt>webexport.xslt&lt;/xslt>
-    &lt;screenshot>screenshot.png&lt;/screenshot>
-    &lt;properties>
-        &lt;property name="extension" value="htm" />
-    &lt;/properties>
-    &lt;outputfiles>
-        &lt;file internal="styles/default.css" output="\styles\default.css" />
-        &lt;file internal="styles/images/" output="\styles\images\" />
-    &lt;/outputfiles>
-&lt;/export>
-</pre>
+
+```xml
+<?xml version="1.0" encoding="UTF-8" ?>
+<export xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <name>Web Export: MSDN Lo Band Style</name>
+    <description>A wesbite export of the documentation in the MSDN Lo Band web style.</description>
+    <author>The Box Software</author>
+    <version>1.0</version>
+    <exporter>web</exporter>
+    <xslt>webexport.xslt</xslt>
+    <screenshot>screenshot.png</screenshot>
+    <properties>
+        <property name="extension" value="htm" />
+    </properties>
+    <outputfiles>
+        <file internal="styles/default.css" output="\styles\default.css" />
+        <file internal="styles/images/" output="\styles\images\" />
+    </outputfiles>
+</export>
+```
 
 Above is the <code>export.config</code> file for the Web Export - MSDN Lo Band. Only the <code>name</code> and <code>xslt</code> elements are required. The following config file contents will create a valid working LDEC file that will be read by the Live Documenter.
 
-<pre>
-&lt;?xml version="1.0" encoding="UTF-8" ?>
-&lt;export xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    &lt;name>A name&lt;/name>
-    &lt;xslt>export.xslt&lt;/xslt>
-&lt;/export>
-</pre>
+```xml
+<?xml version="1.0" encoding="UTF-8" ?>
+<export xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <name>A name</name>
+    <xslt>export.xslt</xslt>
+</export>
+```
 
 ## Process
 ### Generation of an intermediate XML

@@ -9,14 +9,14 @@ permalink: "/docs/application/exporter/"
 
 <p>The parameters accepted by the exporter are:</p>
 
-<pre>
-exporter [modifiers] &lt;filename>
+```shell
+exporter [modifiers] <filename>
 
     modifiers:
     -h		 show help information
     -v           show verbose export details
-    &lt;filename>   The path to the configuration xml file
-</pre>
+    <filename>   The path to the configuration xml file
+```
 
 
 <h3>Commands</h3>
@@ -47,37 +47,37 @@ exporter [modifiers] &lt;filename>
 
 <p>An export configuration file contains the following information.</p>
 
-<pre>
-&lt;?xml version="1.0" encoding="UTF-8" ?>
-&lt;configuration>
-    &lt;document>c:\your-path\mysolution.sln&lt;/document>
+```xml
+<xml version="1.0" encoding="UTF-8" ?>
+<configuration>
+    <document>c:\your-path\mysolution.sln</document>
 
-    &lt;!-- can be Public|Internal|Protected|ProtectedInternal|Private only those detailed will be output,
+    <!-- can be Public|Internal|Protected|ProtectedInternal|Private only those detailed will be output,
         not specifiying a filter section will result in only the Public members being exported.
 
     If these are specified and the document is an ldproj file then these will override the
     ldproj files filters. In the event that the document is not an ldprof file these will
     need to specified.
     -->
-    &lt;filters>
-        &lt;filter>Public&lt;/filter>
-        &lt;filter>Protected&lt;/filter>
-        &lt;filter>Internal&lt;/filter>
-        &lt;filter>InternalProtected&lt;/filter>
-        &lt;filter>Private&lt;/filter>
-    &lt;/filters>
+    <filters>
+        <filter>Public</filter>
+        <filter>Protected</filter>
+        <filter>Internal</filter>
+        <filter>InternalProtected</filter>
+        <filter>Private</filter>
+    </filters>
 
-    &lt;!-- the application will always check the ApplicationData folder for LDEC files -->
-    &lt;outputs>
-        &lt;!-- the locations being output to will be cleared without warning -->
-        &lt;ldec location="c:\temp\web\">web-msdn.ldec&lt;/ldec>
-        &lt;ldec location="c:\temp\htmlhelp-1\">htmlhelp1-msdn.ldec&lt;/ldec>
-        &lt;ldec location="c:\temp\htmlhelp-2\">htmlhelp2-msdn.ldec&lt;/ldec>
-        &lt;ldec location="c:\temp\helpviewer-1\">helpviewer1-msdn.ldec&lt;/ldec>
-        &lt;ldec location="c:\temp\xml\">xml.ldec&lt;/ldec>
-    &lt;/outputs>
-&lt;/configuration>
-</pre>
+    <!-- the application will always check the ApplicationData folder for LDEC files -->
+    <outputs>
+        <!-- the locations being output to will be cleared without warning -->
+        <ldec location="c:\temp\web\">web-msdn.ldec</ldec>
+        <ldec location="c:\temp\htmlhelp-1\">htmlhelp1-msdn.ldec</ldec>
+        <ldec location="c:\temp\htmlhelp-2\">htmlhelp2-msdn.ldec</ldec>
+        <ldec location="c:\temp\helpviewer-1\">helpviewer1-msdn.ldec</ldec>
+        <ldec location="c:\temp\xml\">xml.ldec</ldec>
+    </outputs>
+</configuration>
+```
 
 <p>The <code>document</code> element is a path to your solution, project, .NET dll or ldproj file. Only one document can be specified.</p>
 

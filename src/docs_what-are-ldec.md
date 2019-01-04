@@ -22,75 +22,76 @@ To add new or remove LDEC files from the Live Documenter export dialogue simply 
 ### Live Documenter Exporter
 This works in the same way as the desktop application, in that it has an ApplicationData folder where the LDEC files are installed. However when exports are run the exporter uses a configuration file where you can detail which LDEC files to use when exporting.
 
-<pre>
-&lt;?xml version="1.0" encoding="UTF-8" ?>
-&lt;configuration>
-    &lt;document>c:\path-to-project\mysolution.sln&lt;/document>
+```xml
+<?xml version="1.0" encoding="UTF-8" ?>
+<configuration>
+    <document>c:\path-to-project\mysolution.sln</document>
 
-    &lt;!-- can be Public|Internal|Protected|ProtectedInternal|Private only those detailed will be output,
+    <!-- can be Public|Internal|Protected|ProtectedInternal|Private only those detailed will be output,
         not specifiying a filter section will result in only the Public members being exported.
 
     If these are specified and the document is an ldproj file then these will override the
     ldproj files filters. In the event that the document is not an ldprof file these will
     need to specified.
     -->
-    &lt;filters>
-        &lt;filter>Public&lt;/filter>
-        &lt;filter>Protected&lt;/filter>
-        &lt;filter>Internal&lt;/filter>
-        &lt;filter>InternalProtected&lt;/filter>
-        &lt;filter>Private&lt;/filter>
-    &lt;/filters>
+    <filters>
+        <filter>Public</filter>
+        <filter>Protected</filter>
+        <filter>Internal</filter>
+        <filter>InternalProtected</filter>
+        <filter>Private</filter>
+    </filters>
 
-    &lt;!-- the application will always check the ApplicationData folder for LDEC files -->
-    &lt;outputs>
-        &lt;!-- the locations being output to will be cleared without warning -->
-        &lt;ldec location="c:\temp\web\">web-msdn.ldec&lt;/ldec>
-        &lt;ldec location="c:\temp\htmlhelp-1\">htmlhelp1-msdn.ldec&lt;/ldec>
-        &lt;ldec location="c:\temp\htmlhelp-2\">htmlhelp2-msdn.ldec&lt;/ldec>
-        &lt;ldec location="c:\temp\helpviewer-1\">helpviewer1-msdn.ldec&lt;/ldec>
-        &lt;ldec location="c:\temp\xml\">xml.ldec&lt;/ldec>
-    &lt;/outputs>
-&lt;/configuration>
-</pre>
+    <!-- the application will always check the ApplicationData folder for LDEC files -->
+    <outputs>
+        <!-- the locations being output to will be cleared without warning -->
+        <ldec location="c:\temp\web\">web-msdn.ldec</ldec>
+        <ldec location="c:\temp\htmlhelp-1\">htmlhelp1-msdn.ldec</ldec>
+        <ldec location="c:\temp\htmlhelp-2\">htmlhelp2-msdn.ldec</ldec>
+        <ldec location="c:\temp\helpviewer-1\">helpviewer1-msdn.ldec</ldec>
+        <ldec location="c:\temp\xml\">xml.ldec</ldec>
+    </outputs>
+</configuration>
+```
 
 ### API
 The API does not use LDEC files so there is no need to provide details of them. The API returns the same output as the xml.ldec file (our intermediate XML) to your application; to do with as you please.
 
 ## What is an LDEC file?
 An LDEC file is basically a ZIP file containing all the files and information necessary to perform that export. For example the web-msdn.ldec file has the following structure:
-<pre>
+
+```
 styles/
 styles/default.css
 styles/images/...
 export.config
 screenshot.png
 webexport.xslt
-</pre>
+```
 
 The important file is the export.config file which is read by Live Documenter so it knows where important files such as the xslt are. The web-msdn.ldec export.config file has these contents:
 
-<pre>
-&lt;?xml version="1.0" encoding="UTF-8" ?>
-&lt;export xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    &lt;name>Web Export: MSDN Lo Band Style&lt;/name>
-    &lt;description>A wesbite export of the documentation in the MSDN Lo Band web style.&lt;/description>
-    &lt;author>The Box Software&lt/author>
-    &lt;version>1.0&lt;/version>
-    &lt;exporter>web&lt;/exporter>
-    &lt;xslt>webexport.xslt&lt;/xslt>
-    &lt;screenshot>screenshot.png&lt;/screenshot>
+```xml
+<?xml version="1.0" encoding="UTF-8" ?>
+<export xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <name>Web Export: MSDN Lo Band Style</name>
+    <description>A wesbite export of the documentation in the MSDN Lo Band web style.</description>
+    <author>The Box Software&lt/author>
+    <version>1.0</version>
+    <exporter>web</exporter>
+    <xslt>webexport.xslt</xslt>
+    <screenshot>screenshot.png</screenshot>
 
-    &lt;properties>
-        &lt;property name="extension" value="htm" />
-    &lt;/properties>
+    <properties>
+        <property name="extension" value="htm" />
+    </properties>
 
-    &lt;outputfiles>
-        &lt;file internal="styles/default.css" output="\styles\default.css" />
-        &lt;file internal="styles/images/" output="\styles\images\" />
-    &lt;/outputfiles>
-&lt;/export>
-</pre>
+    <outputfiles>
+        <file internal="styles/default.css" output="\styles\default.css" />
+        <file internal="styles/images/" output="\styles\images\" />
+    </outputfiles>
+</export>
+```
 
 The <code>name</code>, <code>description</code>, <code>author</code>, and <code>version</code> elements contain details that are displayed in the Live Documenter export dialogue and can be used to describe the LDEC file.
 

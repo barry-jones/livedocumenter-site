@@ -1,4 +1,5 @@
 permalink: /:categories/:year/:month/:day/:title:output_ext
 url: https://livedocumenter.barryjones.me.uk
+highlighter: rouge
 plugins:
   - jekyll-sitemap
