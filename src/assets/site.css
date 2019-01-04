@@ -216,6 +216,9 @@ nav .navbar-brand img {
     border-radius: 3px;
     padding: 2px;
 }
+#docs code {
+    color: #333;
+}
 
 /* tables */
 table {

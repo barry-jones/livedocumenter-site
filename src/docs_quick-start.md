@@ -9,9 +9,9 @@ layout: docs
 This page is an overview of the Live Documenter and its basic uses.
 
 __Live Documenter__ is a suite of applications and libraries that enable the automatic generation of documentation
-from .NET code and xml comment files. Learn what Live Documenter is about from our [homepage](/).
+from .NET code and xml comment files. Learn what Live Documenter is about from our [homepage](/) and [download](https://github.com/barry-jones/live-documenter/releases/tag/v2.0.5) the latest version from GitHub.
 
-## Create a documentation website
+## Let's quickly generate a website
 
 Live Documenter makes it quick and easy to create a basic documentation site, much like MSDN, in a matter of seconds. There are many
 ways to start but we will use the console application first.
@@ -24,7 +24,7 @@ Running the above will create documentation in the `c:\temp` directory for the T
 
 Using the example-configuration.xml file we are able to change which members and types we want to appear in the documentation by changing the
 visibility filters. We are able to control the formats the documentation will be output in. Currently, documentation can be exported in web, XML,
-Compiled Help (HTML Help1), and HTML Help 2 and Help Viewew 1 formats.
+Compiled Help (HTML Help1), and HTML Help 2 and Help Viewer 1 formats.
 
 We are also able to select a .NET library, project of solution which contains the code we want to produce documentation for.
 
