@@ -4,18 +4,22 @@ permalink: "/docs/live-documenter-configuration-files/"
 title: What are LDEC files?
 ---
 
-## Live Documenter Export Configuration Files
+# Live Documenter Export Configuration Files
+
+Live Documenter Export Configuration files are self contained files which describe how the underlying documentation
+XML will be exported. 
+
 An export configuration file is a description to the exporter of how to export the current documentation set. There are various pre-packaged Live Documenter Export Configuration (LDEC) files, for exporting to HTML Help 1, Help Viewer 1, Help Viewer 2, Web and XML.
 
-###  Using LDEC files
+##  Using LDEC files
 LDEC files are easy to use. The following describes the use of LDEC files to configure exports in each of the export applications.
 
-#### Live Documenter Desktop
+### Live Documenter Desktop
 The Live Documenter desktop application stores the LDEC files in the ApplicationData folder in it's installation directory.
 
 To add new or remove LDEC files from the Live Documenter export dialogue simply add and remove the items from this folder. Live Documenter searches this directory for LDEC files.
 
-#### Live Documenter Exporter
+### Live Documenter Exporter
 This works in the same way as the desktop application, in that it has an ApplicationData folder where the LDEC files are installed. However when exports are run the exporter uses a configuration file where you can detail which LDEC files to use when exporting.
 
 <pre>
@@ -50,10 +54,10 @@ This works in the same way as the desktop application, in that it has an Applica
 &lt;/configuration>
 </pre>
 
-#### API
+### API
 The API does not use LDEC files so there is no need to provide details of them. The API returns the same output as the xml.ldec file (our intermediate XML) to your application; to do with as you please.
 
-### What is an LDEC file?
+## What is an LDEC file?
 An LDEC file is basically a ZIP file containing all the files and information necessary to perform that export. For example the web-msdn.ldec file has the following structure:
 <pre>
 styles/
@@ -98,6 +102,6 @@ The <code>extension</code> property determine the file extension of all the outp
 
 And finally the <code>outputfiles</code> section allow you to describe a number of individual files and folders that should also be published during the export. In the above example this is used to output the style sheets and image the website uses.
 
-### Find out more
-* [Create your own <abbr title="Live Documenter Export Configuration">LDEC</abbr> files](/export/create-your-own-ldec-files/)
-* [<abbr title="Live Documenter Export Configuration">LDEC</abbr> exporters](/export/exporters/)
+## Find out more
+* [Create your own <abbr title="Live Documenter Export Configuration">LDEC</abbr> files](/docs/export/create-own-ldec-file/)
+* [<abbr title="Live Documenter Export Configuration">LDEC</abbr> exporters](/docs/export/exporters/)
