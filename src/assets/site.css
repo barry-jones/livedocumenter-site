@@ -105,7 +105,7 @@ nav .navbar-brand img {
 }
 
 /* frontpage icons */
-.icon::before {
+#frontpage .icon::before {
     display: inline-block;
     font-style: normal;
     font-variant: normal;
@@ -114,10 +114,10 @@ nav .navbar-brand img {
     font-size: 2rem;
     color: #666;
 }
-.icon_container {
+#frontpage .icon_container {
     position: absolute;
 }
-.icon {
+#frontpage .icon {
     position: relative;
     left: -3em;
 }
@@ -125,9 +125,9 @@ nav .navbar-brand img {
 .tick::before {
     font-family: "Font Awesome 5 Free"; content: "\f058";
 }
-.icon_container .red::before { color: #ec6d5f; }
-.icon_container .blue::before { color: #1fa0e3; }
-.icon_container .green::before { color: #47bfa4; }
+#frontpage .icon_container .red::before { color: #ec6d5f; }
+#frontpage .icon_container .blue::before { color: #1fa0e3; }
+#frontpage .icon_container .green::before { color: #47bfa4; }
 
 /* space for icon to go */
 .has_icon {
@@ -172,6 +172,9 @@ nav .navbar-brand img {
     list-style-type: none;
     padding-left: 1rem;
 }
+#docs .links ul>ul {
+    padding-left: 0;
+}
 #docs .links h3 {
     font-size: 1rem;
     font-weight: bold;
@@ -188,7 +191,7 @@ nav .navbar-brand img {
     padding-top: 1.5rem;
     font-size: 1.3rem;
 }
-#docs .content p:first-of-type {
+#docs .content>p:first-of-type {
     font-size: 1.1rem;
     font-weight: 100;
     color: #999;
@@ -207,4 +210,56 @@ nav .navbar-brand img {
     background-color: #efefef;
     border-radius: 3px;
     padding: 2px;
+}
+
+/* tables */
+table {
+	border: 1px solid #BBBBBB;
+	border-collapse: collapse;
+	width: 100%;
+}
+table th {
+	background-color: #E5E5E5;
+	color: #000000;
+	height: 21px;
+	padding: 4px;
+	text-align: left;
+	font-weight: normal;
+	border: 1px solid #BBBBBB;
+}
+table td {
+	border: 1px solid #BBBBBB;
+	background-color: #FFFFFF;
+	line-height: 140%;
+	margin: 1px;
+	padding: 4px;
+}
+
+table .icon {
+	width: 18px;
+}
+
+
+span.namespace, span.assembly {
+	display: block;
+	font-size: 0.8rem;
+	color: #999;
+}
+
+.inheritance ul {
+	list-style-type: none;
+}
+
+.keyword { color: #0101fd; }
+
+
+.member .details {
+	padding-top: 1rem;
+}
+
+dl dt {
+	font-weight: 600;
+}
+dl dd {
+	padding-left: 1rem;
 }
