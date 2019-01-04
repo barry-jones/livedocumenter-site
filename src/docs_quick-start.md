@@ -1,13 +1,17 @@
 ---
 permalink: "/docs/"
-title: Quick Start
+title: Getting Started with Live Documenter
 layout: docs
 ---
 
-## Quick start guide
-You have downloaded the installers and hit next a few times - now what?
+# Getting Started
 
-### Desktop application
+This page is an overview of the Live Documenter application and its basic uses.
+
+__Live Documenter__ is a suite of applications and libraries that enable the automatic generation of documentation
+from .NET code and xml comment files. Learn what Live Documenter is about from our [homepage](/).
+
+## Desktop application
 Starting up the desktop application will present you with the start screen. Here we can open projects, solutions or individual libraries. Click the open dialogue and select a project you are currently working on.
 
 <div class="row justify-content-center">
@@ -20,14 +24,14 @@ You will be presented with a screen that shows in the left hand panel the namesp
 <img src="/assets/images/documentation/ld-open-docs.png" alt="Live Documenter documentation screen">
 </div>
 
-#### Searching
+### Searching
 A more convenient way of finding information is to use the search bar at the top of the left hand panel. Typing here will present you with a list of all the types and members that match your criteria.
 
 <div class="row justify-content-center">
 <img src="/assets/images/documentation/ld-search.png" alt="Searching in Live Documenter">
 </div>
 
-#### Exporting
+### Exporting
 Live Documenter is packaged with a number of pre-built export configurations. Selecting the export option will present you with a dialogue to export your documentation.
 
 <div class="row justify-content-center">
@@ -38,9 +42,9 @@ For now select the Web MSDN export, and note the location that it is being expor
 
 In a small amount of time the success message will be shown and your documentation is complete. Navigate to the folder and select the index.htm file to browse the documentation you have just created.
 
-### More information
+## More information
 * [Live Documenter Project Files][ldproj-files]
 * [Options][desktop-options]
 
-[ldproj-files]: /application/desktop/ldproj-files/
-[desktop-options]: /application/desktop/options/
+[ldproj-files]: /docs/application/desktop/ldproj-files/
+[desktop-options]: /docs/application/desktop/options/

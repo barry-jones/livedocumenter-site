@@ -160,6 +160,38 @@ nav .navbar-brand img {
 }
 
 /* docs */
-.links {
+#docs p,
+#docs .links a {
+    color: #333;
+}
+
+#docs .links {
     background-color: rgb(247, 247, 247);
+}
+#docs .links ul {
+    list-style-type: none;
+    padding-left: 1rem;
+}
+#docs .links h3 {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+#docs .content h1 {
+    font-size: 2rem;
+}
+#docs .content h2 {
+    padding-top: 1.5rem;
+    font-size: 1.5rem;
+}
+#docs .content h3 {
+    padding-top: 1.5rem;
+    font-size: 1.3rem;
+}
+#docs .content p:first-of-type {
+    font-size: 1.1rem;
+    font-weight: 100;
+    color: #999;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
 }
