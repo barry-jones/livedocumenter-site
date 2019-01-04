@@ -195,3 +195,16 @@ nav .navbar-brand img {
     padding-top: 2rem;
     padding-bottom: 1.5rem;
 }
+
+#docs pre {
+    border: 1px solid #ccc;
+    background-color: #efefef;
+    border-radius: 3px;
+    padding: 1rem;
+}
+#docs p>code {
+    border: 1px solid #ccc;
+    background-color: #efefef;
+    border-radius: 3px;
+    padding: 2px;
+}

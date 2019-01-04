@@ -6,10 +6,29 @@ layout: docs
 
 # Getting Started
 
-This page is an overview of the Live Documenter application and its basic uses.
+This page is an overview of the Live Documenter and its basic uses.
 
 __Live Documenter__ is a suite of applications and libraries that enable the automatic generation of documentation
 from .NET code and xml comment files. Learn what Live Documenter is about from our [homepage](/).
+
+## Create a documentation website
+
+Live Documenter makes it quick and easy to create a basic documentation site, much like MSDN, in a matter of seconds. There are many
+ways to start but we will use the console application first.
+
+```
+exporter example-configuration.xml
+```
+
+Running the above will create documentation in the `c:\temp` directory for the TheBoxSoftware.Reflection.dll library. You will see that a number of folders exist, in this instance we are interested in `c:\temp\web\LD Export - 20190104 1359\`. Open the `index.htm` file in your favourite browser.
+
+Using the example-configuration.xml file we are able to change which members and types we want to appear in the documentation by changing the
+visibility filters. We are able to control the formats the documentation will be output in. Currently, documentation can be exported in web, XML,
+Compiled Help (HTML Help1), and HTML Help 2 and Help Viewew 1 formats.
+
+We are also able to select a .NET library, project of solution which contains the code we want to produce documentation for.
+
+More details for configuring and using the console application can be found in the [documentation](/docs/application/exporter/).
 
 ## Desktop application
 Starting up the desktop application will present you with the start screen. Here we can open projects, solutions or individual libraries. Click the open dialogue and select a project you are currently working on.

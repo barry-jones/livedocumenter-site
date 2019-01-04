@@ -1,6 +1,6 @@
 ---
 layout: docs
-permalink: "/docs/docs/live-documenter-configuration-files/"
+permalink: "/docs/live-documenter-configuration-files/"
 title: What are LDEC files?
 ---
 

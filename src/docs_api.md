@@ -1,7 +1,7 @@
 ---
-layout: page
+layout: docs
 title: API Overview
-permalink: "/api/"
+permalink: "/docs/api/"
 ---
 ## API Overview
 The API (application programming interface) provided by the Live Documenter enables you to have more flexibility over documentation that is generated. In essence it allows you to load a library or project and produce documentation on request a single page at a time.
