@@ -6,6 +6,8 @@ permalink: "/docs/supported-xml-comments/"
 
 ## Supported XML Code Comments
 
+This page contains a full list of all of the suppored XML code comments with examples of usage.
+
 The Live Documenter supports all of the recommended tags for XML code comments.
 
 * <a href="#c">&lt;c></a>

@@ -16,7 +16,7 @@ from .NET code and xml comment files. Learn what Live Documenter is about from o
 Live Documenter makes it quick and easy to create a basic documentation site, much like MSDN, in a matter of seconds. There are many
 ways to start but we will use the console application first.
 
-```
+```shell
 exporter example-configuration.xml
 ```
 
