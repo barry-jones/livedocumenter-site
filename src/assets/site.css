@@ -1,0 +1,165 @@
+.test {border: 1px solid black;}
+main {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+main p {
+    color: #666666;
+}
+
+nav {
+    background-color: #57bfcb;
+    color: #fff;
+}
+nav a { color: #fff; }
+nav .navbar-brand img {
+    height: 43px;
+}
+.nav-link:hover { color: #333; }
+
+#frontpage header {
+    background-color: #57bfcb;
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px 0px inset;
+}
+#frontpage header .row {
+    min-height: 65vh;
+}
+#frontpage header h2 {
+    font-size: 2.6rem;
+    text-shadow: rgba(0, 0, 0, 0.3) 0px 1px 3px;
+    font-weight: 100;
+}
+#frontpage header p {
+    font-size: 1.3rem;
+    text-shadow: rgba(0, 0, 0, 0.3) 0px 1px 3px;
+    font-weight: 300;
+}
+
+#frontpage section h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+} 
+#frontpage section h3 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+#frontpage .introductions .screenshot {
+    max-width: 967px;
+}
+
+.getit *, 
+.products * {
+    color: #fff !important;
+}
+.getit, .products {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px 0px inset;
+}
+
+.getit .btn {
+    border: 2px solid #fff;
+}
+.getit .btn-outline-light:hover {
+    background-color: #ff9a15 !important;
+}
+
+#frontpage section.getit {
+    font-size: 1.6rem;
+    font-weight: 100;
+}
+
+#frontpage header {
+    background-color: #57bfcb;
+}
+#frontpage section.products {
+    background-color: #0f6755;
+}
+#frontpage section.getit {
+    background-color: #f57915;
+}
+
+.documentation h1, 
+.documentation h2, 
+.documentation h3, 
+.documentation h4, 
+.documentation h5 {
+    padding: 1em 0 0 0;
+}
+.documentation p { padding: 0.2rem 0; }
+.documentation img {padding: 1rem 0;}
+.documentation * { color: #333; }
+
+.documentation pre {
+    border: 1px solid #ccc;
+    background-color: #efefef;
+    border-radius: 3px;
+    padding: 1rem;
+}
+.documentation p>code {
+    border: 1px solid #ccc;
+    background-color: #efefef;
+    border-radius: 3px;
+    padding: 2px;
+}
+
+/* frontpage icons */
+.icon::before {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-size: 2rem;
+    color: #666;
+}
+.icon_container {
+    position: absolute;
+}
+.icon {
+    position: relative;
+    left: -3em;
+}
+
+.tick::before {
+    font-family: "Font Awesome 5 Free"; content: "\f058";
+}
+.icon_container .red::before { color: #ec6d5f; }
+.icon_container .blue::before { color: #1fa0e3; }
+.icon_container .green::before { color: #47bfa4; }
+
+/* space for icon to go */
+.has_icon {
+    padding-left: 3rem;
+}
+
+.api::before {
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f0c1";
+}
+.stream::before {
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f550";
+}
+.cogs::before {
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f085";
+}
+.bolt::before {
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f0e7";
+}
+.export::before {
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f56e";
+}
+.search::before {
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f00e";
+}
+.clock::before {
+    font-family: "Font Awesome 5 Free"; font-weight: 500; content: "\f017";
+}
+.live::before {
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f478";
+}
+
+/* docs */
+.links {
+    background-color: rgb(247, 247, 247);
+}

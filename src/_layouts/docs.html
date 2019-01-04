@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    {% include tracking.html %}
+
+    <title>{{page.title}}</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/site.css" />
+  </head>
+  <body>
+    {% include nav.html %}
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="links col-3 pt-5">
+            <ul>
+                <li><a href="/docs/introduction/">Introduction</a></li>
+                <li><a href="/docs/introduction/">Quick Start</a></li>
+                <li><a href="/docs/introduction/">Waht are LDEC files</a></li>
+                <li><a href="/docs/introduction/">Suppored XML comments</a></li>
+                <li><a href="/docs/introduction/">Desktop client</a></li>
+                <li><a href="/docs/introduction/">Command line application</a></li>
+                <li><a href="/docs/introduction/">Exporting</a></li>
+                <li><a href="/docs/introduction/">API</a></li>
+            </ul>
+            <h3>Exporting</h3>
+            <ul>
+                <li><a href="/docs/introduction/">Export quick start</a></li>
+                <li><a href="/docs/introduction/">Help compilers</a></li>
+                <li><a href="/docs/introduction/">Customising the export</a></li>
+                <li><a href="/docs/introduction/">Creating your own LDEC files</a></li>
+            </ul>
+            <h3>Documentation API</h3>
+            <ul>
+                <li><a href="/docs/introduction/">Overview</a></li>
+                <li><a href="/docs/introduction/">API Docs</a></li>
+            </ul>
+          </div>
+          <div class="content col-9 pt-5 pl-5">
+            {{content}}
+          </div>
+        </div>
+      </div>  
+    </main>
+  </body>
+</html>
