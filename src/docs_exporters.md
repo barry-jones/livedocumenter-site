@@ -4,9 +4,12 @@ permalink: "/docs/export/exporters/"
 title: Create your own LDEC files
 ---
 
-<h1>Exporters</h1>
+# Exporters
 
-<p>The following exporters are provided to generate documentation in various formats.</p>
+This page describes the exporters that are available in live documenter. These provide the
+basis for all exporting.
+
+The following exporters are provided to generate documentation in various formats.
 
 <p>The Live Documenter application provides the following internal processors for generating documentation. Any details regarding the installation and use of the exporters are detailed in the pages below.</p>
 

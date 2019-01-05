@@ -3,11 +3,15 @@ layout: docs
 title: Exporter application
 permalink: "/docs/application/exporter/"
 ---
-<h1>Live Documenter Command Line Exporter</h1>
-<p>The exporter application is useful for integrating documentation generation in to existing processes; such as your 
-    build scripts. An application that works on the command line can be simply called.</p>
+# Live Documenter Command Line Exporter
 
-<p>The parameters accepted by the exporter are:</p>
+This page describes how to use the command line application to export documentation.
+
+The exporter application is useful for integrating documentation generation in to existing 
+processes; such as your build scripts. An application that works on the command line can be
+simply called.
+
+The parameters accepted by the exporter are:
 
 ```shell
 exporter [modifiers] <filename>
@@ -19,7 +23,8 @@ exporter [modifiers] <filename>
 ```
 
 
-<h3>Commands</h3>
+### Commands
+
 <table>
     <thead>
         <tr>
@@ -43,9 +48,9 @@ exporter [modifiers] <filename>
     </tbody>
 </table>
 
-<h2>Export configuration files</h2>
+## Export configuration files
 
-<p>An export configuration file contains the following information.</p>
+An export configuration file contains the following information.
 
 ```xml
 <xml version="1.0" encoding="UTF-8" ?>
@@ -79,10 +84,14 @@ exporter [modifiers] <filename>
 </configuration>
 ```
 
-<p>The <code>document</code> element is a path to your solution, project, .NET dll or ldproj file. Only one document can be specified.</p>
+The `document` element is a path to your solution, project, .NET dll or ldproj file. Only one document 
+can be specified.
 
-<p><code>filters</code> determine the visibility of the members that will be exported. If these are not specified it will default to Public and Protected.</p>
+`filters` determine the visibility of the members that will be exported. If these are not specified it 
+will default to Public and Protected.
 
-<p>Finally, <code>outputs</code> detail the location of published files and the LDEC file used to perform the export. One or more outputs can be defined here. Each one will be exported in turn.</p>
+Finally, `outputs` detail the location of published files and the LDEC file used to perform the export. 
+One or more outputs can be defined here. Each one will be exported in turn.
 
-<p>Please <em>note</em> that, just like the desktop application, the output locations will be cleared before the new export will continue.</p>
+Please _note_ that, just like the desktop application, a new timestamped folder will be created to hold
+the new exported content in the directory selected.

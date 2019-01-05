@@ -4,7 +4,7 @@ title: Supported XML Code Comments
 permalink: "/docs/supported-xml-comments/"
 ---
 
-## Supported XML Code Comments
+# Supported XML Code Comments
 
 This page contains a full list of all of the suppored XML code comments with examples of usage.
 

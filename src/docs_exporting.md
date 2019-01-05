@@ -5,8 +5,12 @@ permalink: "/docs/export/"
 
 # Exporting quick start
 
-Exporting is a simple process in Live Documenter, you can export generated documentation from the desktop and command line 
-applications. The steps to export from both of these starts differently but the results are always the same.
+This page describes the process of exporting documentation via both the desktop application
+and the command line application.
+
+Exporting is a simple process in Live Documenter, you can export generated documentation from
+the desktop and command line applications. The steps to export from both of these starts 
+differently but the results are always the same.
 
 ## Exporting from the desktop application
 Lets start by loading a project and exporting it to a web site.
@@ -35,9 +39,12 @@ Lets start by loading a project and exporting it to a web site.
 </ol>
 
 ## Exporting from the command line application
-Exporting from the command line is a simpler process, as it is intended to run without user interaction.
+Exporting from the command line is a simpler process, as it is intended to run without user 
+interaction.
 
-Create a export configuration file. This simply details the project you wish to export, the members to export and the formats to export in. An example file is provided in the application's install directory. Open this for editing.
+Create a export configuration file. This simply details the project you wish to export, the 
+members to export and the formats to export in. An example file is provided in the application's 
+install directory. Open this for editing.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" ?>
@@ -68,13 +75,16 @@ Create a export configuration file. This simply details the project you wish to 
 </configuration>
 ```
 
-Modify the <code>document</code> entry to point to a project you wish to export. Leave the rest of the content the same, this will export all members to multiple outputs in a <code>c:\temp directory</code>.</p>
+Modify the `document` entry to point to a project you wish to export. Leave the rest of the content 
+the same, this will export all members to multiple outputs in a `c:\temp directory`.
 
 Open the command prompt and navigate to the install directory.
 
-Run the command <code>exporter -v example-configuration.xml</code>. The <code>-v</code> option simply increases the amount of information displayed during the export.
+Run the command `exporter -v example-configuration.xml`. The `-v` option simply increases the amount
+of information displayed during the export.
+
 <div class="image">
     <img src="/assets/images/documentation/command-line-output.png">
 </div>
 
-After the export has complete navigte to the <code>c:\temp</code> directory to view your exported files.
+After the export has complete navigte to the `c:\temp` directory to view your exported files.
