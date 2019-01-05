@@ -18,8 +18,8 @@ title: Live Documenter Project ldproj-files
 <p>Project files are created by clicking the save button in Live Documenter, you will then be presented with the 
     normal file dialogue. Once saved the project files can then be opened in the normal manner.</p>
 
-<div class="image">
-    <img src="/assets/images/documentation/ld-manage-documentation.png" alt="Manage your documentation" />
+<div class="row justify-content-center p-3">
+    <img class="fluid-img" src="/assets/images/documentation/ld-manage-documentation.png" alt="Manage your documentation" />
 </div>
 
 <h2>Controlling your documentation</h2>

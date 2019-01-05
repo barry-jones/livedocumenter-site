@@ -4,7 +4,7 @@ permalink: "/docs/application/desktop/"
 title: Live Documenter Desktop Application
 ---
 
-<h1>Live Documenter Desktop Application</h1>
+# Live Documenter Desktop Application
 
 <p>This document describes the desktop application which provides a live, up-to-date view of a your documentation. It also allows you to export documentation as a one-off.</p>
 
@@ -12,10 +12,12 @@ title: Live Documenter Desktop Application
 
 <p>Files that can be opened are, sln, dll, vs project files and Live Documenter project files (ldproj).</p>
 
-<h2>Toolbar</h2>
-<div class="image">
-    <img src="/assets/images/documentation/ld-manage-documentation.png" alt="Live Documenter toolbar" />
+## Toolbar
+
+<div class="row justify-content-center p-3">
+    <img class="fluid-img" src="/assets/images/documentation/ld-manage-documentation.png" alt="Live Documenter toolbar" />
 </div>
+
 <p>The options from left to right are:</p>
 <ul>
     <li>
@@ -48,9 +50,11 @@ title: Live Documenter Desktop Application
 <h2>View settings</h2>
 <p>At the bottom of the page of the document a number of settings are available that control how you view the documentation. These 
     settings are saved in your user profile so only need to be changed once.</p>
-<div class="image">
-    <img src="/assets/images/documentation/view-options.png" alt="View options" />
+
+<div class="row justify-content-center p-3">
+    <img class="fluid-img" src="/assets/images/documentation/view-options.png" alt="View options" />
 </div>
+
 <p>From left to right these settings are:</p>
 <ul>
     <li>

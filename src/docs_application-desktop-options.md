@@ -13,7 +13,7 @@ The following options can be configured with the Live Documenter desktop applica
 
 ## Document Settings
 
-<div class="image">
+<div class="row justify-content-center p-3">
     <img class="fluid-img" src="/assets/images/documentation/ld-settings.png" alt="Settings dialogue" />
 </div>
 
