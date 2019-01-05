@@ -18,7 +18,7 @@ The following is the MSDN Lo-Band web export provided with the application. This
 on the old syle MSDN website. View the <a href="/example/" target="_blank">online example</a>.
 
 <div class="row justify-content-center p-3">
-    <img class="fluid-img image_border" src="/assets/images/documentation/msdn_loband_example.png" alt="MSDN Lo Band exproted web content example" />
+    <img class="img-fluid image_border" src="/assets/images/documentation/msdn_loband_example.png" alt="MSDN Lo Band exproted web content example" />
 </div>
 
 ## Compiled Help
@@ -28,5 +28,5 @@ can [download](/assets/documentation.chm) the example or create your own by sele
 1 as the output for your export.
 
 <div class="row justify-content-center p-3">
-    <img class="fluid-img image_border" src="/assets/images/documentation/msdn_loband_compiledhelp.png" alt="MSDN Lo Band exproted web content example" />
+    <img class="img-fluid image_border" src="/assets/images/documentation/msdn_loband_compiledhelp.png" alt="MSDN Lo Band exproted web content example" />
 </div>
