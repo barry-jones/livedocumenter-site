@@ -5,6 +5,9 @@ permalink: "/docs/export/customising/"
 ---
 # Customising the output
 
+This page describes how to customise the exported content by modifying an existing export configuration
+file.
+
 All of the LDEC files shipped with the Live Documenter can be customised simply by unzipping the contents 
 of the LDEC file to a directory and modifying the CSS. When zipped up again and placed in the ApplicationData 
 folder these will be available in the export dialogue.
