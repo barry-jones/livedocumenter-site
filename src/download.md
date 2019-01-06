@@ -24,6 +24,6 @@ latest_version: 2.0.5
 </section>
 <section class="container pt-5">
     <div class="row justify-content-center preamble">
-        <p>Live Documenter is a documentation generator for .NET, to get started download then visit the <a href="/docs">documentation</a></p>
+        <p>Live Documenter is a documentation generator for .NET, to get started download then visit the <a href="/docs">documentation</a>.</p>
     </div>
 </section>
