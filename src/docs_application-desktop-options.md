@@ -9,12 +9,12 @@ permalink: "/docs/application/desktop/options/"
 This page describes the options available to you to configure what and how information is displayed
 in the [desktop](/docs/application/desktop/) application.
 
-The following options can be configured with the Live Documenter desktop application.
-
 ## Document Settings
 
+The following options can be configured with the Live Documenter desktop application.
+
 <div class="row justify-content-center p-3">
-    <img class="fluid-img" src="/assets/images/documentation/ld-settings.png" alt="Settings dialogue" />
+    <img class="fluid-img image_border" src="/assets/images/documentation/ld-settings.png" alt="Settings dialogue" />
 </div>
 
 ### Build Configuration

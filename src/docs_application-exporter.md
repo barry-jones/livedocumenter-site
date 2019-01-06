@@ -3,7 +3,7 @@ layout: docs
 title: Exporter application
 permalink: "/docs/application/exporter/"
 ---
-# Live Documenter Command Line Exporter
+# Command Line Exporter
 
 This page describes how to use the command line application to export documentation.
 

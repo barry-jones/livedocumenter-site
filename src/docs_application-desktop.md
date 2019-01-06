@@ -4,21 +4,24 @@ permalink: "/docs/application/desktop/"
 title: Live Documenter Desktop Application
 ---
 
-# Live Documenter Desktop Application
+# Desktop Application
 
-<p>This document describes the desktop application which provides a live, up-to-date view of a your documentation. It also allows you to export documentation as a one-off.</p>
+This document describes the desktop application which provides a live, up-to-date view of a your documentation. It also allows you to export documentation as a one-off.
 
-<p>The application can be started from your installation directory or from the desktop icon. On opening the application you will be presented with the start screen. This allows you to select from a recent list of files you have opened or to open a new file to view the documentation.</p>
+## The User Interface
 
-<p>Files that can be opened are, sln, dll, vs project files and Live Documenter project files (ldproj).</p>
+The application can be started from your installation directory or from the desktop icon. On opening the application you will be presented with the start screen. This allows you to select from a recent list of files you have opened or to open a new file to view the documentation.
 
-## Toolbar
+Files that can be opened are, sln, dll, vs project files and Live Documenter project files (ldproj).
+
+### Toolbar
 
 <div class="row justify-content-center p-3">
-    <img class="fluid-img" src="/assets/images/documentation/ld-manage-documentation.png" alt="Live Documenter toolbar" />
+    <img class="fluid-img image_border" src="/assets/images/documentation/ld-manage-documentation.png" alt="Live Documenter toolbar" />
 </div>
 
-<p>The options from left to right are:</p>
+The options from left to right are:
+
 <ul>
     <li>
         <p>File open - this allows you to open a new project for viewing.</p>
@@ -47,15 +50,16 @@ title: Live Documenter Desktop Application
     </li>
 </ul>
 
-<h2>View settings</h2>
-<p>At the bottom of the page of the document a number of settings are available that control how you view the documentation. These 
-    settings are saved in your user profile so only need to be changed once.</p>
+### View settings
+
+At the bottom of the page of the document a number of settings are available that control how you view the documentation. These  settings are saved in your user profile so only need to be changed once.
 
 <div class="row justify-content-center p-3">
     <img class="fluid-img" src="/assets/images/documentation/view-options.png" alt="View options" />
 </div>
 
-<p>From left to right these settings are:</p>
+From left to right these settings are:
+
 <ul>
     <li>
         <p>Page view - view all content for this entry as a collection of single pages which can be navigated.</p>
@@ -71,8 +75,15 @@ title: Live Documenter Desktop Application
     </li>
 </ul>
 
-<h2>Live updating</h2>
-<p>One of the many features of the Live Documenter is that it continually displays a live up-to-date representation of your project documentation. 
-    Every time you peform a build of your software in Visual Studio (or otherwise modify the binaries) Live Documenter will automatically reload
-    the documentation so your view is up to date.</p>
-<p>This feature happens automatically and requires no configuration.</p>
+### Live updating
+One of the many features of the Live Documenter is that it continually displays a live up-to-date representation of your project documentation. Every time you peform a build of your software in Visual Studio (or otherwise modify the binaries) Live Documenter will automatically reload the documentation so your view is up to date.
+
+This feature happens automatically and requires no configuration.
+
+
+## More information
+* [Live Documenter Project Files][ldproj-files]
+* [Options][desktop-options]
+
+[ldproj-files]: /docs/application/desktop/ldproj-files/
+[desktop-options]: /docs/application/desktop/options/

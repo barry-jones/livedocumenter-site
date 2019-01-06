@@ -190,8 +190,11 @@ nav .navbar-brand img {
     font-size: 2rem;
 }
 #docs .content h2 {
-    padding-top: 1.5rem;
+    padding-top: 3rem;
     font-size: 1.5rem;
+}
+#docs .content h2:first-of-type {
+    padding-top: 1.5rem;
 }
 #docs .content h3 {
     padding-top: 1.5rem;
@@ -321,4 +324,15 @@ dl dd {
 #download .preamble p {
     font-size: 1.3rem;
     color: #999;
+}
+
+.note {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: rgba(255,229,100,0.3);
+    padding: 1rem;
+}
+.note::before {
+    content: 'Note';
+    font-weight: bold;
 }

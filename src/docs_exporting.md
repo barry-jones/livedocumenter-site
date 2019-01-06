@@ -21,13 +21,13 @@ Lets start by loading a project and exporting it to a web site.
     <li><p>Now you can see the documentation from your project. The toolbar has a number of icons; click the icon indicated below to open
         the export dialogue.</p>
         <div class="row justify-content-center p-3">
-            <img class="img-fluid" src="/assets/images/documentation/ld-manage-documentation-export.png">
+            <img class="img-fluid image_border" src="/assets/images/documentation/ld-manage-documentation-export.png">
         </div>
     </li>
     <li>
         <p>There are a number of settings here, but to keep it simple we are only going to change the `Export` option list to `Web Export: MSDN Lo Band Style`.</p>
         <div class="row justify-content-center p-3">
-            <img class="img-fluid" src="/assets/images/documentation/ld-export-dialogue.png">
+            <img class="img-fluid image_border" src="/assets/images/documentation/ld-export-dialogue.png">
         </div>
     </li>
     <li>
@@ -84,7 +84,7 @@ Run the command `exporter -v example-configuration.xml`. The `-v` option simply 
 of information displayed during the export.
 
 <div class="row justify-content-center p-3">
-    <img class="img-fluid" src="/assets/images/documentation/command-line-output.png">
+    <img class="img-fluid image_border" src="/assets/images/documentation/command-line-output.png">
 </div>
 
 After the export has complete navigte to the `c:\temp` directory to view your exported files.

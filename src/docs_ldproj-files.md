@@ -19,7 +19,7 @@ title: Live Documenter Project ldproj-files
     normal file dialogue. Once saved the project files can then be opened in the normal manner.</p>
 
 <div class="row justify-content-center p-3">
-    <img class="img-fluid" src="/assets/images/documentation/ld-manage-documentation.png" alt="Manage your documentation" />
+    <img class="img-fluid image_border" src="/assets/images/documentation/ld-manage-documentation.png" alt="Manage your documentation" />
 </div>
 
 <h2>Controlling your documentation</h2>
