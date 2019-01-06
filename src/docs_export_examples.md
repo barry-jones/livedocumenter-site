@@ -8,9 +8,9 @@ permalink: /docs/export/examples/
 This page contains links and images of various exported content that is available
 using Live Documenter.
 
-The [API documentation](/docs/api/4294967371.htm) on this site are generated from a 
-custom exporter, that is an example of what can be done quickly to change the styling
-and content quickly to match your own requirements.
+The [API documentation](/docs/api/4294967371.htm) on this site is generated from a 
+custom exporter. They are an example of what can be done quickly to change the styling
+and content to match your own requirements.
 
 ## MSDN Lo-Band Web
 

@@ -280,3 +280,24 @@ dl dd {
     border: 1px solid #ccc;
     border-radius: 3px;
 }
+
+/* download */
+
+#download .download {
+    background-color: #57bfcb;
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px 0px inset;
+}
+#download .download .row {
+    min-height: 65vh;
+}
+#download .download h2 {
+    font-size: 2.6rem;
+    text-shadow: rgba(0, 0, 0, 0.3) 0px 1px 3px;
+    font-weight: 100;
+}
+#download .download p {
+    font-size: 1.3rem;
+    text-shadow: rgba(0, 0, 0, 0.3) 0px 1px 3px;
+    font-weight: 300;
+}

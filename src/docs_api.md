@@ -3,7 +3,10 @@ layout: docs
 title: API Overview
 permalink: "/docs/api/"
 ---
+
 # API Overview
+
+This page gives a brief overview of the Live Documenter API and how to use it.
 
 The API (application programming interface) provided by the Live Documenter enables you to have more flexibility over documentation that is generated. In essence it allows you to load a library or project and produce documentation on request a single page at a time.
 
