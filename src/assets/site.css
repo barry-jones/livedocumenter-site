@@ -282,22 +282,43 @@ dl dd {
 }
 
 /* download */
-
-#download .download {
+#download section.download {
     background-color: #57bfcb;
-    color: #fff;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px 0px inset;
 }
-#download .download .row {
-    min-height: 65vh;
-}
-#download .download h2 {
-    font-size: 2.6rem;
-    text-shadow: rgba(0, 0, 0, 0.3) 0px 1px 3px;
-    font-weight: 100;
-}
 #download .download p {
-    font-size: 1.3rem;
-    text-shadow: rgba(0, 0, 0, 0.3) 0px 1px 3px;
+    font-size: 1rem;
     font-weight: 300;
+    text-shadow: rgba(0, 0, 0, 0.3) 0px 1px 3px;
+}
+#download section.download .introduction p {
+    font-size: 2rem;
+    color: #fff;
+}
+#download .download_button {
+    border: 1px solid #117460;
+    background-color: #0f6755;
+    border-radius: 3px;
+    padding: 1rem 2rem;
+}
+#download .download_button .fas {
+    font-size: 1.5rem;
+    margin-right: 0.7rem;
+}
+#download .download_button * { color: #fff; }
+#download .download_button p { font-size: 1.3rem; }
+#download .download_button:hover {
+    background-color: #117460;
+    text-decoration: none;
+}
+#download .download_button small {
+    display: block;
+    text-align: center;
+    font-size: 0.7rem;
+    padding: 0rem;
+    margin: 0;
+}
+#download .preamble p {
+    font-size: 1.3rem;
+    color: #999;
 }
