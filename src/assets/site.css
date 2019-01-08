@@ -321,11 +321,14 @@ dl dd {
     padding: 0rem;
     margin: 0;
 }
+#download .download_button.latest {
+    margin-left: 1rem;
+}
 #download .preamble p {
     font-size: 1.3rem;
     color: #999;
 }
-
+.test {border: 1px solid black;}
 .note {
     border: 1px solid #ccc;
     border-radius: 3px;
