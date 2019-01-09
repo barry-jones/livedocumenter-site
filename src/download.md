@@ -15,11 +15,11 @@ nightly_build: /downloads/livedocumenter_latest.zip
         </div>
         <div class="row">
             <div class="col-sm d-flex justify-content-center">
-                <a class="download_button" href="{{ page.latest_file }}" target="_blank" onclick="ga('send', 'event', 'download', 'recommended')">
+                <a class="download_button" href="{{ page.latest_file }}" onclick="ga('send', 'event', 'download', 'recommended')">
                     <p class="link_text"><i class="fas fa-download"></i>v{{page.latest_version}}</p>
                     <small>Recommended</small>
                 </a>
-                <a class="download_button latest" href="{{ page.nightly_build }}" target="_blank" onclick="ga('send', 'event', 'download', 'nightly-build')">
+                <a class="download_button latest" href="{{ page.nightly_build }}" onclick="ga('send', 'event', 'download', 'nightly-build')">
                     <p class="link_text"><i class="fas fa-download"></i>Nightly build</p>
                     <small>Latest features</small>
                 </a>
