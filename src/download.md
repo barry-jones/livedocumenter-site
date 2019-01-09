@@ -11,7 +11,7 @@ nightly_build: /downloads/livedocumenter_latest.zip
 <section class="container-fluid download py-5">
     <div class="container py-5 align-items-center">
         <div class="row introduction justify-content-center">
-            <p>Download the latest version</p>
+            <p>Download for Windows</p>
         </div>
         <div class="row">
             <div class="col-sm d-flex justify-content-center">

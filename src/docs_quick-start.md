@@ -66,7 +66,7 @@ We have used the example configuration file so far, which generated documentatio
 
 Simply change the `document` element to point to a library, project or solution of your choosing. More details for configuring and using the console application can be found in the [documentation](/docs/application/exporter/).
 
-<div class="note">
+<div class="info note">
 The application does not currently support the new VS 2017 csproj files. In this instance select the compiled output to document instead.
 </div>
 
