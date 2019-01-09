@@ -21,3 +21,20 @@ To resolve this issue, first verify that the XML comments are being generated. T
 </div>
 
 This will need to be set for all build configurations you are using.
+
+Alternatively, you can use the `GenerateDocumentationFile` [element][1] in the new project files. This will ensure that the documentation file will be produced for all build configurations and publish activities.
+
+```xml
+<PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <StartupObject>TheBoxSoftware.Exporter.Program</StartupObject>
+    <AssemblyName>exporter</AssemblyName>
+    <RootNamespace>TheBoxSoftware.Exporter</RootNamespace>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+</PropertyGroup>
+```
+
+[1]:  https://stackoverflow.com/questions/47115877/how-to-generate-xml-documentation-for-csproj-with-multiple-targets
