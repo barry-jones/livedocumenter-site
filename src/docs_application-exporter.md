@@ -14,12 +14,22 @@ simply called.
 The parameters accepted by the exporter are:
 
 ```shell
-exporter [modifiers] <filename>
+The exporter takes the following arguments
+   exporter <filename> mmodifiers
 
-    modifiers:
-    -h		 show help information
-    -v           show verbose export details
-    <filename>   The path to the configuration xml file
+   [e.g.] exporter theboxsoftware.reflection.dll -to c:\temp\web -filters "public|protected"
+
+   <filename>  The path to the configuration file, library, project or solution.
+   modifiers:
+     -h        show help information
+     -v        show verbose export details
+     -to       the directory to export to
+     -format   the ldec file format to export content. Defaults to web-msdn.ldec
+     -filters  the visibilty filters (public|protected etc) defaults to public
+
+
+`-to`, `-format` and `-filters` are only used when the file provided is not a
+configuration xml file.
 ```
 
 
@@ -34,6 +44,10 @@ exporter [modifiers] <filename>
     </thead>
     <tbody>
         <tr>
+            <td>&lt;filename></td>
+            <td>The file path to the configuration file that details the export.</td>
+        </tr>    
+        <tr>
             <td>-h</td>
             <td>Displays the help information above.</td>
         </tr>
@@ -42,8 +56,26 @@ exporter [modifiers] <filename>
             <td>Outputs the steps for the export instead of just the fact it has started an export. With or without this modifier it will always display the warnings and errors.</td>
         </tr>
         <tr>
-            <td>&lt;filename></td>
-            <td>The file path to the configuration file that details the export.</td>
+            <td>-to</td>
+            <td>Specified a location to export the documentation to. Is only valid when <em>filename</em> is not a configuration file.</td>
+        </tr>
+        <tr>
+            <td>-format</td>
+            <td>The name of the ldec exporter to use. E.g. web-msdn.ldec, this file should be in the ApplicationData folder. Is only valid when <em>filename</em> is not a configuration file.</td>
+        </tr>
+        <tr>
+            <td>-filters</td>
+            <td><p>Specifies the list of visibilty modifiers which will be exporter. Default is public. Is only valid when <em>filename</em> is not a configuration file.</p>
+            <p>The filters can be one or all of the following:</p>
+            <ul>
+                <li>public</li>
+                <li>internal</li>
+                <li>internalprotected</li>
+                <li>protected</li>
+                <li>private</li>
+            </ul>
+            <p>When specifying more than one ensure they are seperated by the | character and enclosed in quotes. <em>"public|protected"</em></p>
+            </td>
         </tr>
     </tbody>
 </table>
