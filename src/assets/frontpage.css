@@ -1,0 +1,67 @@
+
+#frontpage header {
+    background-color: #57bfcb;
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px 0px inset;
+}
+#frontpage header .row {
+    min-height: 65vh;
+}
+#frontpage header h2 {
+    font-size: 2.6rem;
+    text-shadow: rgba(0, 0, 0, 0.3) 0px 1px 3px;
+    font-weight: 100;
+}
+#frontpage header p {
+    font-size: 1.3rem;
+    text-shadow: rgba(0, 0, 0, 0.3) 0px 1px 3px;
+    font-weight: 300;
+}
+
+#frontpage section h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+} 
+#frontpage section h3 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+#frontpage .introductions .screenshot {
+    max-width: 967px;
+}
+#frontpage .introductions .callouts {
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+}
+
+.getit *, 
+.products * {
+    color: #fff !important;
+}
+.getit, .products {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px 0px inset;
+}
+
+.getit .btn {
+    border: 2px solid #fff;
+}
+.getit .btn-outline-light:hover {
+    background-color: #ff9a15 !important;
+}
+
+#frontpage section.getit {
+    font-size: 1.6rem;
+    font-weight: 100;
+}
+
+#frontpage header {
+    background-color: #57bfcb;
+}
+#frontpage section.products {
+    background-color: #0f6755;
+}
+#frontpage section.getit {
+    background-color: #f57915;
+}
