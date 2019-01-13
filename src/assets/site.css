@@ -17,74 +17,6 @@ nav a { color: #fff; }
 nav .navbar-brand img {
     height: 43px;
 }
-.nav-link:hover { color: #333; }
-
-#frontpage header {
-    background-color: #57bfcb;
-    color: #fff;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px 0px inset;
-}
-#frontpage header .row {
-    min-height: 65vh;
-}
-#frontpage header h2 {
-    font-size: 2.6rem;
-    text-shadow: rgba(0, 0, 0, 0.3) 0px 1px 3px;
-    font-weight: 100;
-}
-#frontpage header p {
-    font-size: 1.3rem;
-    text-shadow: rgba(0, 0, 0, 0.3) 0px 1px 3px;
-    font-weight: 300;
-}
-
-#frontpage section h2 {
-    text-align: center;
-    font-size: 2rem;
-    color: #333;
-} 
-#frontpage section h3 {
-    font-size: 1.2rem;
-    color: #333;
-}
-
-#frontpage .introductions .screenshot {
-    max-width: 967px;
-}
-#frontpage .introductions .callouts {
-    padding-top: 5rem;
-    padding-bottom: 3rem;
-}
-
-.getit *, 
-.products * {
-    color: #fff !important;
-}
-.getit, .products {
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px 0px inset;
-}
-
-.getit .btn {
-    border: 2px solid #fff;
-}
-.getit .btn-outline-light:hover {
-    background-color: #ff9a15 !important;
-}
-
-#frontpage section.getit {
-    font-size: 1.6rem;
-    font-weight: 100;
-}
-
-#frontpage header {
-    background-color: #57bfcb;
-}
-#frontpage section.products {
-    background-color: #0f6755;
-}
-#frontpage section.getit {
-    background-color: #f57915;
-}
 
 .documentation h1, 
 .documentation h2, 
@@ -187,7 +119,7 @@ nav .navbar-brand img {
 }
 
 #docs .content h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 #docs .content h2 {
     padding-top: 3rem;
@@ -208,16 +140,14 @@ nav .navbar-brand img {
     padding-bottom: 1.5rem;
 }
 #docs pre {
-    border: 1px solid #ccc;
     background-color: #efefef;
     border-radius: 3px;
     padding: 1rem;
 }
 #docs p>code {
-    border: 1px solid #ccc;
     background-color: #efefef;
     border-radius: 3px;
-    padding: 2px;
+    padding: 2px 4px;
 }
 #docs code {
     color: #333;
@@ -280,7 +210,7 @@ dl dd {
 }
 
 #docs .image_border { 
-    border: 1px solid #ccc;
+    box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
     border-radius: 3px;
 }
 
@@ -299,15 +229,18 @@ dl dd {
     color: #fff;
 }
 #download .download_button {
-    border: 1px solid #117460;
-    background-color: #0f6755;
+    background-color: hsl(168, 75%, 23%);
     border-radius: 3px;
     padding: 1rem 2rem;
+    box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
 }
 #download .download_button .fas {
     font-size: 1.5rem;
     margin-right: 0.7rem;
+    color: hsl(168, 75%, 80%, 0.5);
+    text-shadow: none;
 }
+
 #download .download_button * { color: #fff; }
 #download .download_button p { font-size: 1.3rem; }
 #download .download_button:hover {
@@ -323,15 +256,19 @@ dl dd {
 }
 #download .download_button.latest {
     margin-left: 1rem;
+    background-color: hsl(186, 53%, 57%);
+    box-shadow: none;
 }
+#download .download_button.latest .fas {
+    color: hsla(186, 53%, 80%, 0.7)
+}
+
 #download .preamble p {
     font-size: 1.3rem;
     color: #999;
 }
 .test {border: 1px solid black;}
 .info {
-    border: 1px solid #ccc;
-    border-radius: 3px;
     background-color: rgba(255,229,100,0.3);
     padding: 1rem;
 }
