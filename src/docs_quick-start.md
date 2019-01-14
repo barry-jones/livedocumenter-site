@@ -6,8 +6,7 @@ layout: docs
 
 # Getting Started
 
-__Live Documenter__ is a suite of applications and libraries that enable the automatic generation of documentation
-from .NET code and xml comment files. Learn what Live Documenter is about from our [homepage](/) and [download](/download) the latest version.
+__Live Documenter__ is a suite of applications and libraries that enable the live viewing and automatic generation of documentation from .NET code and xml comment files. Learn what Live Documenter is from our [homepage](/) and [download](/download) the latest version.
 
 ## Let's quickly generate some documentation
 
@@ -17,13 +16,13 @@ in a matter of seconds. There are a couple of ways to start, but let's use the c
 Navigate, in a terminal, to the install location of the application and type the following:
 
 ```shell
-exporter -v example-configuration.xml
+exporter example-configuration.xml
 ```
 
 You will see output like the following:
 
 ```shell
-Live Documenter Exporter Version: 2.0.4.0
+Live Documenter Exporter Version: 2.1
 
 Details:
   Visible members: (Public|Protected|Internal|InternalProtected|Private)
@@ -72,13 +71,27 @@ Three ways to utilise your documentation that fits your work style, projects and
 
 ### Desktop
 
+The desktop application provides a live view of your project, this updates every time the library is recompiled or the solution/project changes. 
+
+Have Live Documenter open on your next project and have the entire project documentation available to you. Quickly search through for specific members. Print pages or export the entire site to a compiled help or website.
+
+<div class="row justify-content-center p-3">
+    <img class="fluid-img image_border" style="max-width: 841px" src="/assets/images/documentation/ld_desktop_preview.png" alt="Preview of desktop application" />
+</div>
+
 For a full description of the desktop application and its features, be sure to [view](/docs/application/desktop/) the more detailed docs.
 
-## Command line utility
+### Command line utility
+
+A utility for exporting documentation to static content. Export your docs to a web site or to the web, xml and compiled help in one go. Integrate in to build steps or use ad-hoc, flexible fast access to documentation generation.
+
+<div class="row justify-content-center p-3">
+    <img class="fluid-img image_border" style="max-width: 594px" src="/assets/images/documentation/ld_console_preview.png" alt="Preview of console application" />
+</div>
 
 For a full description of the command line application and its features, be sure to [view](/docs/application/exporter/) the more detailed docs.
 
-## API library
+### API library
 
 For a full description of the API library and how to utilise it, be sure to [view](/docs/api/index.html) the API section of the documentation.
 
