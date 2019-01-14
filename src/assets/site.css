@@ -212,6 +212,7 @@ dl dd {
 #docs .image_border { 
     box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
     border-radius: 3px;
+    height: auto;
 }
 
 /* download */

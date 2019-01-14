@@ -6,8 +6,6 @@ layout: docs
 
 # Getting Started
 
-This page is an overview of the Live Documenter and its basic uses.
-
 __Live Documenter__ is a suite of applications and libraries that enable the automatic generation of documentation
 from .NET code and xml comment files. Learn what Live Documenter is about from our [homepage](/) and [download](/download) the latest version.
 
@@ -66,36 +64,39 @@ We have used the example configuration file so far, which generated documentatio
 
 Simply change the `document` element to point to a library, project or solution of your choosing. More details for configuring and using the console application can be found in the [documentation](/docs/application/exporter/).
 
-<div class="info note">
-The application does not currently support the new VS 2017 csproj files. In this instance select the compiled output to document instead.
-</div>
-
 ## Getting to know Live Documenter
 
-The application comprises of three seperate parts, the first is the console application you have just seen; the second is a desktop client and third is a programatic API.
+Live Documenter is a desktop application, command line utility and API library. All designed to make it easy to use Live Documenter to utilise the XML code comments in .NET applications. Live view, static help files and more dynamic implementations via the API.
+
+Three ways to utilise your documentation that fits your work style, projects and organisation.
 
 ### Desktop
 
-Starting up the desktop application will present you with the start screen. Here we can open projects, solutions or individual libraries. Click the open dialogue and select a project you are currently working on.
+For a full description of the desktop application and its features, be sure to [view](/docs/application/desktop/) the more detailed docs.
 
-You will be presented with a screen that shows in the left hand panel the namespaces that are defined in your project and in the right hand panel the documentation. Expanding namespaces and selecting items on the left hand side is a simple way to navigate through a project to find documentation.
+## Command line utility
 
-<div class="row justify-content-center p-3">
-<img class="img-fluid image_border" src="/assets/images/documentation/ld-open-docs.png" alt="Live Documenter documentation screen">
-</div>
+For a full description of the command line application and its features, be sure to [view](/docs/application/exporter/) the more detailed docs.
 
-A more convenient way of finding information is to use the search bar at the top of the left hand panel. Typing here will present you with a list of all the types and members that match your criteria.
+## API library
 
-<div class="row justify-content-center p-3">
-<img class="img-fluid image_border" src="/assets/images/documentation/ld-search.png" alt="Searching in Live Documenter">
-</div>
+For a full description of the API library and how to utilise it, be sure to [view](/docs/api/index.html) the API section of the documentation.
 
-Live Documenter is packaged with a number of pre-built export configurations. Selecting the export option will present you with a dialogue to export your documentation.
+The API (application programming interface) provided by the Live Documenter enables you to have more flexibility over documentation that is generated. In essence it allows you to load a library or project and produce documentation on request a single page at a time.
 
-<div class="row justify-content-center p-3">
-<img class="img-fluid image_border" src="/assets/images/documentation/ld-export-dialogue.png" alt="Documentation export">
-</div>
+This would allow you to, for example, create a web site which watches a .NET library and associated XML comments. Displaying the latest documentation all the time. The API is used to provide this functionality for the Live Documenter API documentation.
 
-For now select the Web MSDN export, and note the location that it is being exported to. <em>Be careful not to output to an existing directory as the contents are cleaned prior to  exporting</em>. Hit the go button.
+```cs
+Documentation docs = new Documentation("myfile.dll");
+docs.Load();
 
-In a small amount of time the success message will be shown and your documentation is complete. Navigate to the folder and select the index.htm file to browse the documentation you have just created.
+// get a page of documentation
+XmlDocument xmlDocument = new XmlDocument();
+xmlDocument.LoadXml(
+	docs.Find("T:System.String"); // searching can be performed using cref paths
+	);
+```
+
+## Thanks
+
+Thanks for showing an interest in the Live Documenter. We hope you enjoy the application and find it useful. We are always looking for feedback and help, if you are interested you can help make Live Documenter better on [GitHub](https://github.com/barry-jones/live-documenter).

@@ -26,6 +26,8 @@ The exporter takes the following arguments
      -to       the directory to export to
      -format   the ldec file format to export content. Defaults to web-msdn.ldec
      -filters  the visibilty filters (public|protected etc) defaults to public
+               "all" can be provided as a shortcut to:-
+                  "public|protected|internal|interalprotected|private"
 
 
 `-to`, `-format` and `-filters` are only used when the file provided is not a
@@ -75,6 +77,7 @@ configuration xml file.
                 <li>private</li>
             </ul>
             <p>When specifying more than one ensure they are seperated by the | character and enclosed in quotes. <em>"public|protected"</em></p>
+            <p><code>all</code> can be provided as a shortcut to all available filters listed above.</p>
             </td>
         </tr>
     </tbody>
