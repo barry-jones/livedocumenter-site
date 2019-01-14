@@ -1,31 +1,32 @@
-
 #frontpage header {
-    background-color: #57bfcb;
+    background-color: $primary-color;
     color: #fff;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px 0px inset;
-}
-#frontpage header .row {
-    min-height: 65vh;
-}
-#frontpage header h2 {
-    font-size: 2.6rem;
-    text-shadow: rgba(0, 0, 0, 0.3) 0px 1px 3px;
-    font-weight: 100;
-}
-#frontpage header p {
-    font-size: 1.3rem;
-    text-shadow: rgba(0, 0, 0, 0.3) 0px 1px 3px;
-    font-weight: 300;
+
+    .row {
+        min-height: 65vh;
+    }
+
+    h2 {
+        font-size: 2.6rem;
+        text-shadow: rgba(0, 0, 0, 0.3) 0px 1px 3px;
+        font-weight: 100;
+    }
+    p {
+        font-size: 1.3rem;
+        text-shadow: rgba(0, 0, 0, 0.3) 0px 1px 3px;
+        font-weight: 300;
+    }
 }
 
 #frontpage section h2 {
     text-align: center;
     font-size: 2rem;
-    color: #333;
+    color: $color-gray-9;
 } 
 #frontpage section h3 {
     font-size: 1.2rem;
-    color: #333;
+    color: $color-gray-9;
 }
 
 #frontpage .introductions .screenshot {
@@ -57,11 +58,37 @@
 }
 
 #frontpage header {
-    background-color: #57bfcb;
+    background-color: $primary-color;
 }
 #frontpage section.products {
-    background-color: #0f6755;
+    background-color: $secondary-color;
 }
 #frontpage section.getit {
-    background-color: #f57915;
+    background-color: $tertiary-color;
 }
+
+
+/* frontpage icons */
+#frontpage .icon::before {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-size: 2rem;
+    color: $color-gray-6;
+}
+#frontpage .icon_container {
+    position: absolute;
+}
+#frontpage .icon {
+    position: relative;
+    left: -3em;
+}
+
+.tick::before {
+    font-family: "Font Awesome 5 Free"; content: "\f058";
+}
+#frontpage .icon_container .red::before { color: #ec6d5f; }
+#frontpage .icon_container .blue::before { color: #1fa0e3; }
+#frontpage .icon_container .green::before { color: #47bfa4; } 

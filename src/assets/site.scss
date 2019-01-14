@@ -1,18 +1,12 @@
 ---
 ---
+@import "colors";
 @import "frontpage";
+@import url(tango.css);
 
 // fonts
 $font-stack: 'Open Sans', sans-serif;
-$font-color: #333;
 $font-size-base: 16px;
-
-// colors
-$primary-color: hsl(186, 53%, 57%); // #57bfcb;
-$secondary-color: hsl(168, 75%, 23%);
-$tertiary-color: #f57915;
-$background-color: rgb(247, 247, 247);
-$code-blocks-color: hsla(0, 0%, 94%, 1);
 
 .test {border: 1px solid black;}
 main {
@@ -20,7 +14,7 @@ main {
     font-size: $font-size-base;
 }
 main p {
-    color: #666;
+    color: $color-gray-9;
 }
 
 nav {
@@ -49,7 +43,7 @@ nav {
         padding: 1rem 0;
     }
     *  {
-        color: $font-color;
+        color: $color-gray-8;
     }
     pre {
         border: 1px solid #ccc;
@@ -64,31 +58,6 @@ nav {
         padding: 2px;
     }
 }
-
-/* frontpage icons */
-#frontpage .icon::before {
-    display: inline-block;
-    font-style: normal;
-    font-variant: normal;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    font-size: 2rem;
-    color: #666;
-}
-#frontpage .icon_container {
-    position: absolute;
-}
-#frontpage .icon {
-    position: relative;
-    left: -3em;
-}
-
-.tick::before {
-    font-family: "Font Awesome 5 Free"; content: "\f058";
-}
-#frontpage .icon_container .red::before { color: #ec6d5f; }
-#frontpage .icon_container .blue::before { color: #1fa0e3; }
-#frontpage .icon_container .green::before { color: #47bfa4; } 
 
 /* space for icon to go */
 .has_icon {
@@ -121,12 +90,25 @@ nav {
 }
 
 #docs  {
+    background-color: $color-gray-1;
+
+    .content {
+        background-color: white;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 4rem;
+
+        .page {
+            max-width: 40rem;
+        }
+    }
+
     p,
     .links a {
-        color: $font-color;
+        color: $color-gray-8;
     }
     .links {
-        background-color: $background-color;
+        background-color: $color-gray-1;
     }
     .links ul {
         list-style-type: none;
@@ -141,24 +123,28 @@ nav {
     }
 
     pre {
-        background-color: $code-blocks-color;
+        background-color: $color-gray-1;
         border-radius: 3px;
         padding: 1rem;
     }
     p>code {
-        background-color: $code-blocks-color;
+        background-color: $color-gray-2;
         border-radius: 3px;
         padding: 2px 4px;
     }
-    code {
-        color: $font-color;
+    
+    code,
+    pre {
+        color: $color-gray-9;
     }
+
     .content h1 {
         font-size: 2.5rem;
     }
     .content h2 {
         padding-top: 3rem;
         font-size: 1.5rem;
+        border-bottom: 4px solid $tertiary-color-highlight;
     }
     .content h2:first-of-type {
         padding-top: 1.5rem;
@@ -167,7 +153,7 @@ nav {
         padding-top: 1.5rem;
         font-size: 1.3rem;
     }
-    .content>p:first-of-type {
+    .content>div>p:first-of-type {
         font-size: 1.1rem;
         font-weight: normal;
         padding-top: 2rem;

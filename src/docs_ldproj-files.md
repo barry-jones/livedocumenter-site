@@ -13,7 +13,7 @@ title: Live Documenter Project ldproj-files
 <p>The control provided here will only effect the Live Documenter project file and will not change the solutions,
      projects and libraries in your file system.</p>
 
-<h1>Creating a project file</h1>
+## Creating a project file
 
 <p>Project files are created by clicking the save button in Live Documenter, you will then be presented with the 
     normal file dialogue. Once saved the project files can then be opened in the normal manner.</p>
