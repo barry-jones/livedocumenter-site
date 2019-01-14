@@ -3,3 +3,5 @@ url: https://livedocumenter.barryjones.me.uk
 highlighter: rouge
 plugins:
   - jekyll-sitemap
+sass:
+  sass_dir: ./_scss
