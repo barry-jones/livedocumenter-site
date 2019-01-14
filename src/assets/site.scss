@@ -1,45 +1,69 @@
+---
+---
+@import "frontpage";
 @import url(tango.css);
+
+// fonts
+$font-stack: 'Open Sans', sans-serif;
+$font-color: #333;
+$font-size-base: 16px;
+
+// colors
+$primary-color: hsl(186, 53%, 57%); // #57bfcb;
+$secondary-color: hsl(168, 75%, 23%);
+$tertiary-color: #f57915;
+$background-color: rgb(247, 247, 247);
+$code-blocks-color: hsla(0, 0%, 94%, 1);
 
 .test {border: 1px solid black;}
 main {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
+    font-family: $font-stack;
+    font-size: $font-size-base;
 }
 main p {
-    color: #666666;
+    color: #666;
 }
 
 nav {
-    background-color: #57bfcb;
+    background-color: $primary-color;
     color: #fff;
-}
-nav a { color: #fff; }
-nav .navbar-brand img {
-    height: 43px;
+
+    a {
+        color: #fff;
+    }
+
+    .navbar-brand img {
+        height: 43px;
+    }
 }
 
-.documentation h1, 
-.documentation h2, 
-.documentation h3, 
-.documentation h4, 
-.documentation h5 {
-    padding: 1em 0 0 0;
-}
-.documentation p { padding: 0.2rem 0; }
-.documentation img {padding: 1rem 0;}
-.documentation * { color: #333; }
 
-.documentation pre {
-    border: 1px solid #ccc;
-    background-color: #efefef;
-    border-radius: 3px;
-    padding: 1rem;
-}
-.documentation p>code {
-    border: 1px solid #ccc;
-    background-color: #efefef;
-    border-radius: 3px;
-    padding: 2px;
+.documentation {
+    @for $i from 1 through 5 {
+        h#{$i} { padding: 1em 0 0 0; }
+    }
+
+    p {
+        padding: 0.2rem 0;
+    }
+    img {
+        padding: 1rem 0;
+    }
+    *  {
+        color: $font-color;
+    }
+    pre {
+        border: 1px solid #ccc;
+        background-color: $code-blocks-color;
+        border-radius: 3px;
+        padding: 1rem;
+    }
+    p>code {
+        border: 1px solid #ccc;
+        background-color: $code-blocks-color;
+        border-radius: 3px;
+        padding: 2px;
+    }
 }
 
 /* frontpage icons */
@@ -65,7 +89,7 @@ nav .navbar-brand img {
 }
 #frontpage .icon_container .red::before { color: #ec6d5f; }
 #frontpage .icon_container .blue::before { color: #1fa0e3; }
-#frontpage .icon_container .green::before { color: #47bfa4; }
+#frontpage .icon_container .green::before { color: #47bfa4; } 
 
 /* space for icon to go */
 .has_icon {
@@ -97,60 +121,60 @@ nav .navbar-brand img {
     font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f478";
 }
 
-/* docs */
-#docs p,
-#docs .links a {
-    color: #333;
-}
+#docs  {
+    p,
+    .links a {
+        color: $font-color;
+    }
+    .links {
+        background-color: $background-color;
+    }
+    .links ul {
+        list-style-type: none;
+        padding-left: 1rem;
+    }
+    .links ul>ul {
+        padding-left: 0;
+    }
+    .links h3 {
+        font-size: 1rem;
+        font-weight: bold;
+    }
 
-#docs .links {
-    background-color: rgb(247, 247, 247);
-}
-#docs .links ul {
-    list-style-type: none;
-    padding-left: 1rem;
-}
-#docs .links ul>ul {
-    padding-left: 0;
-}
-#docs .links h3 {
-    font-size: 1rem;
-    font-weight: bold;
-}
-
-#docs .content h1 {
-    font-size: 2.5rem;
-}
-#docs .content h2 {
-    padding-top: 3rem;
-    font-size: 1.5rem;
-}
-#docs .content h2:first-of-type {
-    padding-top: 1.5rem;
-}
-#docs .content h3 {
-    padding-top: 1.5rem;
-    font-size: 1.3rem;
-}
-#docs .content>p:first-of-type {
-    font-size: 1.1rem;
-    font-weight: 100;
-    color: #999;
-    padding-top: 2rem;
-    padding-bottom: 1.5rem;
-}
-#docs pre {
-    background-color: #efefef;
-    border-radius: 3px;
-    padding: 1rem;
-}
-#docs p>code {
-    background-color: #efefef;
-    border-radius: 3px;
-    padding: 2px 4px;
-}
-#docs code {
-    color: #333;
+    pre {
+        background-color: $code-blocks-color;
+        border-radius: 3px;
+        padding: 1rem;
+    }
+    p>code {
+        background-color: $code-blocks-color;
+        border-radius: 3px;
+        padding: 2px 4px;
+    }
+    code {
+        color: $font-color;
+    }
+    .content h1 {
+        font-size: 2.5rem;
+    }
+    .content h2 {
+        padding-top: 3rem;
+        font-size: 1.5rem;
+    }
+    .content h2:first-of-type {
+        padding-top: 1.5rem;
+    }
+    .content h3 {
+        padding-top: 1.5rem;
+        font-size: 1.3rem;
+    }
+    .content>p:first-of-type {
+        font-size: 1.1rem;
+        font-weight: normal;
+        padding-top: 2rem;
+        padding-bottom: 1.5rem;
+        font-style: italic;
+    }
 }
 
 /* tables */
@@ -179,7 +203,6 @@ table td {
 table .icon {
 	width: 18px;
 }
-
 
 span.namespace, span.assembly {
 	display: block;
@@ -217,7 +240,7 @@ dl dd {
 
 /* download */
 #download section.download {
-    background-color: #57bfcb;
+    background-color: $primary-color;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px 0px inset;
 }
 #download .download p {
@@ -230,7 +253,7 @@ dl dd {
     color: #fff;
 }
 #download .download_button {
-    background-color: hsl(168, 75%, 23%);
+    background-color: $secondary-color;
     border-radius: 3px;
     padding: 1rem 2rem;
     box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
@@ -238,7 +261,7 @@ dl dd {
 #download .download_button .fas {
     font-size: 1.5rem;
     margin-right: 0.7rem;
-    color: hsl(168, 75%, 80%, 0.5);
+    color: hsl(168, 75%, 80%);
     text-shadow: none;
 }
 
@@ -257,7 +280,7 @@ dl dd {
 }
 #download .download_button.latest {
     margin-left: 1rem;
-    background-color: hsl(186, 53%, 57%);
+    background-color: $primary-color;
     box-shadow: none;
 }
 #download .download_button.latest .fas {
