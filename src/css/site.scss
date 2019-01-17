@@ -1,0 +1,78 @@
+---
+---
+
+@import "bootstrap/bootstrap";
+@import "custom/colors";
+@import "custom/typography";
+
+$default-shadow: 0 4px 6px 0 hsla(0, 0%, 1%, 0.1);
+
+body {
+    background-color: $c-neutral-1;
+    font-size: $f-base-size;
+}
+.container {
+    max-width: 960px;
+}
+
+nav, header, .background {
+    background-color: $c-primary_7;
+}
+nav {
+    a {
+        color: $c-neutral-1;
+    }
+
+    .navbar-brand img {
+        height: 43px;
+    }
+}
+
+#frontpage {
+    .background {
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+        max-height: 800px;
+        z-index: -10;
+    }
+    header { 
+        .container {
+            text-align: center;
+            color: $c-primary-5;
+            h1 {
+                padding-top: 20vh;
+                color: $c-neutral-1;
+            }
+            .preamble {
+                max-width: 28rem;
+                margin: 0 auto;
+            }
+            .download-button {
+                margin-top: 10vh;
+                margin-bottom: 10vh;
+            }
+        }
+    }
+    .screenshot img {
+        border-radius: 6px;
+        box-shadow: $default-shadow;
+    }
+}
+
+.download-button {
+    border-radius: 3px;
+    background-color: $c-accent1-5;
+    box-shadow: $default-shadow;
+    color: $c-accent1-1;
+    padding: 0.7rem 1.3rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px hsla(0, 0%, 0%, 0.15);
+
+    
+}
+.download-button:hover {
+    text-decoration: none;
+    color: $c-accent1-1;
+    background-color: $c-accent1-6;
+}

@@ -1,0 +1,19 @@
+
+$f-base-size: 16px;
+
+.strapline {
+    @include media-breakpoint-down(sm) {
+        font-size: 1.8rem;
+    }
+    @include media-breakpoint-up(sm) {
+        font-size: 2.25rem;
+    }
+}
+.preamble p {
+    @include media-breakpoint-down(sm) {
+        font-size: 1.05rem;
+    }
+    @include media-breakpoint-up(sm) {
+        font-size: 1.12rem;
+    }
+}
