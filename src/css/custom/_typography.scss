@@ -1,5 +1,15 @@
 
-$f-base-size: 16px;
+$f-base-size: 17px;
+body p {
+    line-height: 1.8rem;
+}
+
+h1, h2, h3 {
+    font-family: source-sans-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.links h3 { font-family: inherit; }
 
 .strapline {
     @include media-breakpoint-down(sm) {

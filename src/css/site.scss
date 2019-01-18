@@ -4,6 +4,8 @@
 @import "bootstrap/bootstrap";
 @import "custom/colors";
 @import "custom/typography";
+@import "custom/api";
+@import url(tango.css);
 
 $default-shadow: 0 4px 6px 0 hsla(0, 0%, 1%, 0.1);
 
@@ -11,7 +13,7 @@ body {
     background-color: $c-neutral-1;
     font-size: $f-base-size;
 }
-.container {
+section .container {
     max-width: 960px;
 }
 
@@ -36,6 +38,8 @@ nav {
         width: 100vw;
         max-height: 800px;
         z-index: -10;
+        box-sizing: content-box;
+        border-bottom: 3rem solid $c-accent2-3;
     }
     header { 
         .container {
@@ -55,6 +59,12 @@ nav {
             }
         }
     }
+
+    section.why {
+        border-top: 10px solid $c-accent2-5;
+    }
+
+    section h2 { text-align: center; }
 
     section.call-to-action {
         color: white;
@@ -121,7 +131,65 @@ section {
     } 
 }
 
-#docs .content {
-    background-color: white;
-    padding: 0 2rem;
+#docs {
+    border-top: 1rem solid $c-accent2-3;
+    
+    .content {
+        background-color: white;
+        padding: 0 2rem;
+    }
+    
+    .content>div>p:first-of-type {
+        font-size: 1.1rem;
+        font-weight: normal;
+        font-style: italic;
+    }
+
+    .links {
+        color: $c-primary-9;
+        a { color: $c-primary-9; }
+        a:hover { color: $c-primary-9; }
+
+        ul { list-style-type: none; padding-left: 0.5rem; }
+
+        h3 {
+            text-transform: uppercase;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+    }
+
+    .page {
+        padding-bottom: 5rem;
+        h2 { padding-top: 3rem; }
+        h3 { padding-top: 2rem; }
+    }
+    pre {
+        border: 1px solid $c-neutral-2;
+        background-color: $c-neutral-1;
+        border-radius: 3px;
+        padding: 1rem;
+    }
+    p>code {
+        border: 1px solid #ccc;
+        background-color: $c-neutral-1;
+        border-radius: 3px;
+        padding: 2px;
+        color: inherit;
+    }
+}
+
+.keyword { color: #0101fd; }
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.info {
+    background-color: rgba(255,229,100,0.3);
+    padding: 1rem;
+}
+.note::before {
+    content: 'Note';
+    font-weight: bold;
 }
