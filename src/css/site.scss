@@ -32,6 +32,7 @@ nav {
     .background {
         position: absolute;
         height: 100vh;
+        min-height: 600px;
         width: 100vw;
         max-height: 800px;
         z-index: -10;
@@ -39,7 +40,7 @@ nav {
     header { 
         .container {
             text-align: center;
-            color: $c-primary-5;
+            color: hsla(186, 33%, 83%, 1);
             h1 {
                 padding-top: 20vh;
                 color: $c-neutral-1;
@@ -54,11 +55,42 @@ nav {
             }
         }
     }
-    .screenshot img {
-        border-radius: 6px;
-        box-shadow: $default-shadow;
+
+    section.call-to-action {
+        color: white;
+        background-color: $c-accent1-5;
+        margin-bottom: 0;
+
+        p {font-size: 1.7rem;}
+        
+        .row { height: 10rem;}
+        
+        .col:nth-child(2) {
+            text-align: center;
+
+            a {
+                padding: 1rem 2rem;
+                border: 1px solid $c-neutral-1
+            }
+        }
     }
+
+    @include media-breakpoint-down(md) {
+        h2 { padding: 4rem 0 0 0; }
+        h3 { padding: 2rem 0 0.5rem 0; }
+    }
+    @include media-breakpoint-up(md) {
+        h2 { padding: 6rem 0 0 0; }
+        h3 { padding: 2.5rem 0 0.7rem 0; }
+    } 
+    @include media-breakpoint-up(lg) {
+        h2 { padding: 9rem 0 0 0; }
+        h3 { padding: 4rem 0 1.5rem 0; }
+    } 
 }
+
+p { padding: 1rem 0 0 0; }
+h1>p,h2>p,h3>p {padding-top: 0;}
 
 .download-button {
     border-radius: 3px;
@@ -67,12 +99,29 @@ nav {
     color: $c-accent1-1;
     padding: 0.7rem 1.3rem;
     font-weight: bold;
-    text-shadow: 1px 1px 2px hsla(0, 0%, 0%, 0.15);
-
-    
+    text-shadow: 1px 1px 2px hsla(0, 0%, 0%, 0.15);    
 }
 .download-button:hover {
     text-decoration: none;
     color: $c-accent1-1;
     background-color: $c-accent1-6;
+}
+
+.screenshot img, .image_border {
+    border-radius: 6px;
+    box-shadow: $default-shadow;
+}
+
+section {
+    @include media-breakpoint-down(md) {
+        margin-bottom: 3rem;
+    }
+    @include media-breakpoint-up(md) {
+        margin-bottom: 5rem;
+    } 
+}
+
+#docs .content {
+    background-color: white;
+    padding: 0 2rem;
 }

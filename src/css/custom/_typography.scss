@@ -17,3 +17,12 @@ $f-base-size: 16px;
         font-size: 1.12rem;
     }
 }
+
+@include media-breakpoint-down(sm) {
+    h2 { font-size: 1.5rem; }
+    h3 { font-size: 1.2rem; }
+}
+@include media-breakpoint-up(sm) {
+    h2 { font-size: 1.8rem; }
+    h3 { font-size: 1.5rem; }
+} 
