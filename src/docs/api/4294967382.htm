@@ -1,0 +1,29 @@
+---
+layout: docs_api
+title: GetParents()
+---
+<div class="container"><div class="row"><div class="links col-md-3 pt-5">
+					{% include doc_links.html %}
+					<h3>API</h3><ul><li><a href="/docs/api/index.html">Overview</a></li><li><a href="/docs/api/index.htm">API Docs</a></li><ul><li><a class="" href="4294967296-TheBoxSoftware.API.LiveDocumenter.htm">TheBoxSoftware.API.LiveDocumenter</a><ul><li><a class="" href="4294967379.htm">ContentEntry</a><ul><li><a class="" href="4294967379-Methods.htm">Methods</a><ul><li><a class="current" href="4294967382.htm">GetParents</a><ul /></li></ul></li></ul></li></ul></li></ul></ul></div><div class="content col-md-9 pt-5"><section class="details"><h1>GetParents()</h1><div class="summary">Retrieves a list of the parent entries for this ContentEntry </div><div class="details"><span class="namespace"><em>Namespace:</em> <a href="4294967296-TheBoxSoftware.API.LiveDocumenter.htm">TheBoxSoftware.API.LiveDocumenter</a></span><span class="assembly"><em>Assembly:</em> TheBoxSoftware.API.LiveDocumenter in (TheBoxSoftware.API.LiveDocumenter.dll)
+						</span></div><div class="syntax"><h2>Syntax</h2><div class="csharp code"><div>C#</div><pre><span class="keyword">public</span> List&lt;ContentEntry&gt; GetParents()</pre></div></div></section><section class="return"><h3>Returns</h3><div class="item">List&lt;&gt;</div><div class="returns">A sequential list of parents or an empty list if the entry has no parents.</div></section><section class="remarks"><h2>Remarks</h2><p>Calling this method will return a sequential list of parents for this ContentEntry. Parents are listed from top to bottom in order of distance from this element.</p><p>So for example, given an element defined as below:</p>
+		<div class="code">
+        	<pre>namespace TestNamespace
+{
+    public class ParentClass
+    {
+        public class ChildClass
+        {
+            public class ClassForOurContentEntry
+            {
+            }
+        }
+    }
+}</pre>
+		</div>
+    <p>The GetParents method would return ContentEntrys in the following order for a ContentEntry that points to the  class <code>ClassForOutContentEntry</code>.</p>
+		<div class="code">
+        	<pre>1. TestNamespace
+2. ParentClass
+3. ChildClass</pre>
+		</div>
+    </section></div></div></div>

@@ -165,13 +165,13 @@ section {
         h3 { padding-top: 2rem; }
     }
     pre {
-        border: 1px solid $c-neutral-2;
+        border: 1px solid $c-border;
         background-color: $c-neutral-1;
         border-radius: 3px;
         padding: 1rem;
     }
-    p>code {
-        border: 1px solid #ccc;
+    p>code, p>.code {
+        border: 1px solid $c-border;
         background-color: $c-neutral-1;
         border-radius: 3px;
         padding: 2px;
@@ -192,4 +192,100 @@ section {
 .note::before {
     content: 'Note';
     font-weight: bold;
+}
+
+#docs.docs_api {
+        
+    >div
+    {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    
+    section.details .summary {
+        font-style: italic;
+    }
+
+    .inheritance h2 { display: none; }
+
+    .syntax h2 { display: none; }
+    .code
+    {
+        background-color: hsl(0, 0%, 95%);
+        border: 1px solid $c-border;
+        border-bottom: none;
+        border-radius: 3px;
+    }
+    .code pre {
+        border: none;
+        padding: 0.5rem;
+        border-bottom: 1px solid $c-border;
+    }
+    section.details .syntax>div>div
+    {
+        padding: 0.4rem 0.6rem;
+        background-color: hsl(0, 0%, 93%);
+    }
+    .syntax pre span {display: inline;}
+    // .syntax pre span.keyword { color: hsl(236, 100%, 73%); }
+
+    code {
+        color: inherit;
+    }
+    code::after {content: " ";}
+
+    
+    section.details {border-top: none; 	margin-top: 0;padding-top: 0;}
+
+    section.details h1 
+    {
+        margin-bottom: 2rem;
+    }
+
+    section.details div.summary {
+        margin: 0 0 1.5rem 0;
+        font-size: 1.1rem;
+        font-weight: 300;
+    }
+
+    section.details .inheritance .inherits_from
+    {
+        color: #AAAAAA;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+    .inheritance .inherits_from span:not(:last-child):after
+    {
+        content: ' -> '
+    }
+    .inheritance .derived {
+        margin: 1rem 0 1.2rem 0;
+        color: inherit;
+    }
+    .inheritance .derived span
+    {
+        display: block;
+    }
+
+    section.details .details {
+        margin-bottom: 1rem;
+        display: none;
+    }
+
+    section.members .entry,
+    section.namespaces .entry
+    {
+        margin: 1rem 0;
+    }
+
+    section.members .entry .details {
+        margin: 3rem;
+    }
+
+    div section 
+    {
+        border-top: 1px solid hsla(186, 53%, 57%, 0.2);
+        margin-top: 4rem;
+        padding-top: 3rem;
+    }
 }
