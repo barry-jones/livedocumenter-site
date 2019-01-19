@@ -138,14 +138,7 @@ nav {
         } 
     }
     section.call-to-action {
-        @include media-breakpoint-down(md) {
-            padding-bottom: 0;
-            margin-bottom: 3rem;
-        }
-        @include media-breakpoint-up(md) {
-            padding-bottom: 0;
-            margin-bottom: 5rem;
-        } 
+        padding-bottom: 0;
     }
 }
 
