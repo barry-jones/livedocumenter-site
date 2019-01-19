@@ -8,14 +8,13 @@ permalink: /docs/export/examples/
 This page contains links and images of various exported content that is available
 using Live Documenter.
 
-The [API documentation](/docs/api/4294967371.htm) on this site is generated from a 
+The [API documentation](/docs/api/4294967379.htm) on this site is generated from a 
 custom exporter. They are an example of what can be done quickly to change the styling
 and content to match your own requirements.
 
 ## Web Refresh
 
-This example is the new "Web Refresh" version which will be fully released in v2.1, but can be downloaded
-and used in the nightly build. View the <a href="/example/web_refresh/" target="_blank">online example</a>.
+This example is the new "Web Refresh" provided with the application. View the <a href="/example/web_refresh/" target="_blank">online example</a>.
 
 <div class="row justify-content-center p-3">
     <img class="img-fluid image_border" src="/assets/images/documentation/web_refresh.png" alt="MSDN Lo Band exproted web content example" />
