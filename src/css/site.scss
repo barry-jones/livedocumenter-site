@@ -24,6 +24,9 @@ nav {
     a {
         color: $c-neutral-1;
     }
+    a:hover {
+        color: $c-accent1-5;
+    }
 
     .navbar-brand img {
         height: 43px;
@@ -101,7 +104,7 @@ nav {
 
     .why {
         background-color: $c-accent2-6;
-        color: $c-accent2-1;
+        color: $c-accent2-3;
     }
 
     .features {
