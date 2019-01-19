@@ -6,7 +6,7 @@ layout: docs
 
 # Getting Started
 
-__Live Documenter__ is a suite of applications and libraries that enable the live viewing and automatic generation of documentation from .NET code and xml comment files. Learn what Live Documenter is from our [homepage](/) and [download](/download) the latest version.
+__Live Documenter__ is a suite of applications and libraries that enable the live viewing and automatic generation of documentation from .NET code and xml comment files. Learn what Live Documenter is from our [homepage](/) and download the latest version.
 
 ## Let's quickly generate some documentation
 
