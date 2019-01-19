@@ -60,10 +60,6 @@ nav {
         }
     }
 
-    section.why {
-        border-top: 10px solid $c-accent2-5;
-    }
-
     section h2 { text-align: center; }
 
     section.call-to-action {
@@ -96,7 +92,38 @@ nav {
     @include media-breakpoint-up(lg) {
         h2 { padding: 9rem 0 0 0; }
         h3 { padding: 4rem 0 1.5rem 0; }
-    } 
+    }
+
+    .features .content { max-width: 55rem; }
+    .why > * {
+        max-width: 50rem;
+    }
+
+    .why {
+        background-color: $c-accent2-6;
+        color: $c-accent2-1;
+    }
+
+    .features {
+        h3 {
+            padding-bottom: 1rem;
+            margin-bottom: 0;
+        }
+        p {
+            padding-top: 0;
+        }
+        .feature {
+            @include media-breakpoint-down(md) {
+                margin: 3rem 0;
+            }
+            @include media-breakpoint-up(md) {
+                margin: 4rem 0;
+            } 
+            @include media-breakpoint-up(lg) {
+                margin: 6rem 0;
+            }
+        }
+    }
 }
 
 p { padding: 1rem 0 0 0; }
@@ -124,9 +151,19 @@ h1>p,h2>p,h3>p {padding-top: 0;}
 
 section {
     @include media-breakpoint-down(md) {
+        padding-bottom: 3rem;
+    }
+    @include media-breakpoint-up(md) {
+        padding-bottom: 5rem;
+    } 
+}
+section.call-to-action {
+    @include media-breakpoint-down(md) {
+        padding-bottom: 0;
         margin-bottom: 3rem;
     }
     @include media-breakpoint-up(md) {
+        padding-bottom: 0;
         margin-bottom: 5rem;
     } 
 }
