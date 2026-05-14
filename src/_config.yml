@@ -6,3 +6,4 @@ plugins:
 sass:
   sass_dir: css
   style: compressed
+  quiet_deps: true
